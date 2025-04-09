@@ -1,19 +1,19 @@
-public class Car implements InternalCombustion, Electric,Hybrid {
+public class Car implements Electric, InternalCombustion, Hybrid {
+    private String battery;
+    private int cylinder;
 
-    String battery;
-    int cylinder;
-
-    Car(String batt){
-        this.battery = "10kwh";
-        this.electric = true;
-        this.gas = false;
+    public Car(String batt, int cyl) {
+        this.battery = batt;
+        this.cylinder = cyl;
     }
 
-    public default int getCylinder(){
-        return cylinder;
-    }
-
-    public default String getBattery(){
+    @Override
+    public String getBattery() {
         return battery;
+    }
+
+    @Override
+    public int getCylinder() {
+        return cylinder;
     }
 }
