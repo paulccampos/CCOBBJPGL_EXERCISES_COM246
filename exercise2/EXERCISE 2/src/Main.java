@@ -8,7 +8,5 @@ public class Main {
         Researcher rcMe = new Researcher("Jane", null, 0);
         System.out.println(rcMe.name +" works as a " + rcMe.getWork() + " and he earns " + rcMe.getSalary());
 
-        Car myCar = new Car()
-        System.out.println("My car has "+ myCar.getCylinder() + " cylinders and " +myCar.getBattery()+ "battery");
     }
 }
