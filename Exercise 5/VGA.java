@@ -1,0 +1,4 @@
+interface VGA {
+    void connectWithVGA();
+}
+
